@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '29002304'))
 API_HASH = environ.get('API_HASH', '94e59f4efbb74820d043de101f6adc6d')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6083839381:AAGQRK5hSJRUrrmsNpicAKuDBDx1aRUo-IQ")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7226148239:AAFvCPecG09_LWgHZBmpi8leAOz1jt2zaBE")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,8 +34,8 @@ STREAM_API = (environ.get('STREAM_API', '9a81ccb3742f88c6c5493d8859b9ca7c8bbf434
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/howtoopenlinkssri/16'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6139556802 6642501643 1720819569').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001945681253 -1001646245159 -1001549916465 -1002015172179').split()] #Channel id for auto indexing ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6139556802').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002075397287').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -56,8 +56,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'instantearn.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1502a197c85d59929d50f1cba1d5e6f967d1e962')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tulinks.online')
+SHORTLINK_API = environ.get('SHORTLINK_API', '9a81ccb3742f88c6c5493d8859b9ca7c8bbf4347')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,7 +68,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+oMz1VPb7pCI1MjU8')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtoopenlinkssri/19')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Srikanth')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001931063215')) #Log channel id ( make sure bot is admin )
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002014827868')) #Log channel id ( make sure bot is admin )
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '@ROYALCINEMASR') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
